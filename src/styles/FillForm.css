@@ -1,0 +1,78 @@
+/* .auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.auth-card-FillForm {
+  background: #fff;
+  padding: 30px;
+  width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #667eea;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background-color: #5a67d8;
+} */
+
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* 🔥 Scrollable Card */
+.auth-card-FillForm {
+  background: #fff;
+  padding: 30px;
+  width: 420px;
+  max-height: 80vh;        /* LIMIT HEIGHT */
+  overflow-y: auto;        /* ENABLE SCROLL */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Optional: Smooth Scrollbar Styling */
+.auth-card-FillForm::-webkit-scrollbar {
+  width: 6px;
+}
+
+.auth-card-FillForm::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #667eea;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background-color: #5a67d8;
+}

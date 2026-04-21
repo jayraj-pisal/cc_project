@@ -1,0 +1,129 @@
+/* Full page background */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card */
+.auth-card {
+  background: #fff;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Role Toggle (Admin / Student) */
+.role-toggle {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.role-toggle button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #f1f1f1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-toggle button:hover {
+  background: #e2e2e2;
+}
+
+.role-toggle button.active {
+  background-color: #667eea;
+  color: white;
+}
+
+/* Form spacing */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+/* .password-wrapper input {
+  padding-right: 40px;
+} */
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Login button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #667eea;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a67d8;
+}
+
+/* Sign up text */
+.signup-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link {
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

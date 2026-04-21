@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Internship Application Form",
+    "pdf": "/pdfs/internship.pdf",
+    "fields": [
+      {"label":"Full Name","name":"name","type":"text"},
+      {"label":"College","name":"college","type":"text"},
+      {"label":"Branch","name":"branch","type":"text"},
+      {"label":"Email","name":"email","type":"email"},
+      {"label":"Phone","name":"phone","type":"text"}
+    ]
+  }
+]

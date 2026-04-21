@@ -1,0 +1,122 @@
+/* Full page center */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card */
+.auth-card {
+  background: #fff;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+/* .password-wrapper input {
+  padding-right: 40px;
+} */
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #667eea;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background-color: #5a67d8;
+}
+
+/* Switch login/register text */
+.switch-auth {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch-auth span {
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.switch-auth span:hover {
+  text-decoration: underline;
+}
+
+/* Role Toggle */
+.role-toggle {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.role-toggle button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #f1f1f1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-toggle button:hover {
+  background: #e2e2e2;
+}
+
+.role-toggle button.active {
+  background-color: #667eea;
+  color: white;
+}

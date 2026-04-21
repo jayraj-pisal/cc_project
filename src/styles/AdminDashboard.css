@@ -1,0 +1,348 @@
+/* ===============================
+   MAIN CONTAINER
+================================*/
+.admin-container{
+  padding:40px;
+  min-height:100vh;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* ===============================
+   HEADER
+================================*/
+.admin-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+  color:white;
+}
+
+.admin-header h2{
+  font-size:28px;
+  font-weight:600;
+}
+
+.admin-info{
+  display:flex;
+  gap:15px;
+  align-items:center;
+  font-size:16px;
+}
+
+.admin-info button{
+  padding:8px 16px;
+  border:none;
+  background:#ff4d4d;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.admin-info button:hover{
+  background:#e63946;
+}
+
+
+/* ===============================
+   DASHBOARD CARDS
+================================*/
+.dashboard-cards{
+  display:flex;
+  gap:25px;
+  margin-bottom:35px;
+}
+
+.card{
+  flex:1;
+  background:rgba(255,255,255,0.95);
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  margin-bottom:10px;
+  color:#444;
+}
+
+.card p{
+  font-size:26px;
+  font-weight:bold;
+  color:#667eea;
+}
+
+
+/* ===============================
+   UPLOAD SECTION
+================================*/
+.upload-section{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  margin-bottom:35px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.upload-section h3{
+  margin-bottom:15px;
+}
+
+.upload-section input{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+.upload-section button{
+  padding:10px 18px;
+  background:#667eea;
+  border:none;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.upload-section button:hover{
+  background:#5a67d8;
+}
+
+
+/* ===============================
+   FORM LIST
+================================*/
+.form-list{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.form-list h3{
+  margin-bottom:15px;
+}
+
+.form-list ul{
+  list-style:none;
+  padding:0;
+}
+
+.form-list li{
+  padding:12px 10px;
+  border-bottom:1px solid #eee;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:0.2s;
+}
+
+.form-list li:hover{
+  background:#f7f7ff;
+}
+
+.form-list li:last-child{
+  border-bottom:none;
+}
+
+.delete-btn{
+  background:#ff4d4d;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:13px;
+  transition:0.3s;
+}
+
+.delete-btn:hover{
+  background:#e63946;
+}
+
+/* ===============================
+   LAYOUT (LEFT DASHBOARD + RIGHT PANEL)
+================================*/
+
+.admin-layout{
+  display:flex;
+  gap:25px;
+  padding:40px;
+  min-height:100vh;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.admin-main{
+  flex:3;
+}
+
+.student-panel{
+  flex:1;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  height:fit-content;
+}
+
+.student-panel h3{
+  margin-bottom:15px;
+}
+
+
+/* ===============================
+   STUDENT SUBMISSION CARD
+================================*/
+
+.submission-card{
+  background:#f7f7ff;
+  padding:12px;
+  margin-bottom:12px;
+  border-radius:8px;
+  transition:0.2s;
+}
+
+.submission-card:hover{
+  background:#eef0ff;
+}
+
+.submission-card p{
+  margin:4px 0;
+  font-size:14px;
+}
+
+.submission-card a{
+  /* color:#667eea; */
+  font-weight:500;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.submission-card a:hover{
+  text-decoration:underline;
+}
+
+
+
+/* ===============================
+   LAYOUT (LEFT DASHBOARD + RIGHT PANEL)
+================================*/
+
+.admin-layout{
+  display:flex;
+  gap:25px;
+  padding:40px;
+  min-height:100vh;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-main{
+  flex:3;
+}
+
+.student-panel{
+  flex:1;
+  background:rgba(255,255,255,0.96);
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  height:fit-content;
+}
+
+.student-panel h3{
+  margin-bottom:18px;
+  color:#333;
+  font-size:20px;
+  font-weight:600;
+}
+
+
+/* ===============================
+   SUBMISSION CARD
+================================*/
+
+.submission-card{
+  background:#f7f7ff;
+  padding:14px 16px;
+  margin-bottom:14px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  transition:0.25s ease;
+}
+
+.submission-card:hover{
+  background:#eef0ff;
+  transform:translateY(-2px);
+}
+
+.submission-card p{
+  margin:6px 0;
+  font-size:14px;
+  color:#444;
+  line-height:1.4;
+}
+
+.submission-card b{
+  color:#222;
+}
+
+
+/* ===============================
+   VIEW PDF BUTTON / LINK
+================================*/
+
+.view-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 14px;
+  background:#667eea;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:14px;
+  font-weight:500;
+  transition:0.25s ease;
+}
+
+.view-btn:hover{
+  background:#5a67d8;
+  text-decoration:none;
+}
+
+
+/* ===============================
+   EMPTY TEXT
+================================*/
+
+.student-panel p{
+  font-size:14px;
+  color:#555;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================*/
+
+@media (max-width: 992px){
+  .admin-layout{
+    flex-direction:column;
+  }
+
+  .admin-main,
+  .student-panel{
+    width:100%;
+  }
+}
