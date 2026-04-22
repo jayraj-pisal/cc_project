@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import "../styles/Login.css";
+import { API_BASE } from "../config";
 
 function Login() {
 
@@ -19,10 +20,7 @@ function Login() {
 
     try {
 
-      const res = await axios.post(
-        "/api/auth/login",
-        { email, password, role, code }
-      );
+      const res = await axios.post(`${API_BASE}/api/auth/login`, { email, password, role, code });
 
       console.log("LOGIN RESPONSE:", res.data);
 

@@ -14,7 +14,7 @@ function AdminDashboard() {
   // =========================
   const loadForms = async () => {
     try {
-      const res = await axios.get("/api/forms");
+     const res = await axios.get(`${API_BASE}/api/forms`);
       setForms(res.data);
     } catch (err) {
       console.log("Load Forms Error:", err);
@@ -26,7 +26,7 @@ function AdminDashboard() {
   // =========================
   const loadSubmissions = async () => {
     try {
-      const res = await axios.get("/api/submit");
+     const res = await axios.get(`${API_BASE}/api/submit`);
       setSubmissions(res.data);
     } catch (err) {
       console.log("Load Submissions Error:", err);
@@ -54,7 +54,7 @@ function AdminDashboard() {
 
     try {
       await axios.post(
-        "/api/forms/upload",
+        `${API_BASE}/api/forms/upload`,
         formData,
         {
           headers: {
@@ -84,7 +84,7 @@ function AdminDashboard() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`/api/forms/${id}`);
+      await axios.delete(`${API_BASE}/api/forms/${id}`);
       alert("Form deleted successfully");
       loadForms();
 

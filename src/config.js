@@ -1,1 +1,1 @@
-export const API_BASE = import.meta.env.VITE_API_URL || '';
+export const API_BASE = "http://13.62.228.7:3001";

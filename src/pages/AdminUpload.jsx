@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { API_BASE } from "../config";
 
 export default function AdminUpload() {
   const [file, setFile] = useState(null);
@@ -9,7 +10,7 @@ export default function AdminUpload() {
     formData.append("pdf", file);   
 
     try {
-      await axios.post("/api/forms/upload", formData);
+      await axios.post(`${API_BASE}/api/forms/upload`, formData);
       alert("PDF Uploaded!");
     } catch (err) {
       console.log(err);

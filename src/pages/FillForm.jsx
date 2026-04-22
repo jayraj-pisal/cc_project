@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import FormRenderer from "../components/FormRenderer";
 import axios from "axios";
 import "../styles/FillForm.css";
+import { API_BASE } from "../config";
 
 export default function FillForm() {
 
@@ -14,7 +15,7 @@ export default function FillForm() {
 
   // 🔥 Fetch form from backend
   useEffect(() => {
-    axios.get(`/api/forms/${id}`)
+    axios.get(`${API_BASE}/api/forms/${id}`)
       .then(res => {
         setForm(res.data);
       })
@@ -32,13 +33,13 @@ export default function FillForm() {
 
     try {
       const response = await axios.post(
-        "/api/submit",
-        {
-          form_id: id,   // 🔥 use dynamic id
-          user_id: 1,
-          data: formData
-        }
-      );
+  `${API_BASE}/api/submit`,
+  {
+    form_id: form.id,
+    user_id: 1,
+    data: formData
+  }
+);
 
       navigate("/preview", {
         // state: { file: response.data.file }

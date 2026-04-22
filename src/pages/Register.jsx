@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/Register.css";
-
+import { API_BASE } from "../config";
 
 function Register() {
 
@@ -20,7 +20,7 @@ function Register() {
     try {
 
       await axios.post(
-        "/api/auth/register",
+          `${API_BASE}/api/auth/register`,
         { email, password, role }   // 🔹 send role
       );
 

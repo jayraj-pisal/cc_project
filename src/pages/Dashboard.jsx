@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/Dashboard.css";
+import { API_BASE } from "../config";
 
 export default function Dashboard() {
   const [forms, setForms] = useState([]);
@@ -14,7 +15,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    axios.get("/api/forms")
+    axios.get(`${API_BASE}/api/forms`)
       .then(res => setForms(res.data))
       .catch(err => console.log(err));
   }, []);
