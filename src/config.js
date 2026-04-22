@@ -1,1 +1,1 @@
-export const API_BASE = "http://13.62.228.7:3001";
+export const API_BASE = "https://jayrajpdf.duckdns.org";
