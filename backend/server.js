@@ -32,13 +32,7 @@ app.use("/api/submit", submitRoutes);
 app.get("/health", (_, res) => res.json({ status: "ok" }));
 
 const PORT = process.env.PORT || process.env.BACKEND_PORT || 3001;
-// Bind to 0.0.0.0 in any cloud env (AWS, Railway, etc.) — localhost only for local dev
-const HOST = (process.env.NODE_ENV === "production" ||
-              process.env.RAILWAY_ENVIRONMENT ||
-              process.env.AWS_EXECUTION_ENV)
-  ? "0.0.0.0"
-  : "localhost";
 
-app.listen(PORT, HOST, () => {
-  console.log(`Backend server running on ${HOST}:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Backend server running on 0.0.0.0:${PORT}`);
 });
